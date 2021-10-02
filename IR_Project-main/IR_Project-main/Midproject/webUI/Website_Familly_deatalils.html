@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Automatic Answer Evaluation System</title>
+	</head>
+	<body>
+		<!--table one-->
+		<table width="100%">
+			<tr>
+				<td width="40%"><h1 style="color: green" id="1"><strong>Automatic Answer Evaluation System</strong></h1></td>
+				
+				<td width="20%" align="center"><img src="iiitd.png"  width="500" height="100" alt="FamilyPhoto" style="float : right;" ></td>
+				<td width="100%"></td>
+			</tr>
+			
+		</table>
+		<!--table two-->
+		<table width="100%" style="background-color: red;color:white" border="2px">
+			<tr>
+				<td width="16%" style="font-size: 20px;text-align: center;"><a href="" style="color: white;text-decoration: none"><strong>Home</strong></a></td>
+				<td width="16%" style="font-size: 20px;text-align: center;"><a href="uploadfolder.html" style="color: white;text-decoration: none"><strong>Upload Folder</strong></a></td>
+				<td width="16%" style="font-size: 20px;text-align: center;"><a href="uploadrubricfile.html" style="color: white;text-decoration: none"><strong>Upload Rubric</strong></a></td>
+				<td width="16%" style="font-size: 20px;text-align: center;"><a href="file:///home/ram/webdevelopment/htmlcss/downloadresult.html" style="color: white;text-decoration: none"><strong>Report</strong></a></td>
+				<td width="16%" style="font-size: 20px;text-align: center;"><a href="login.html" style="color: white;text-decoration: none"><strong>Login</strong></a></td>
+				<td width="20%" style="font-size: 20px;text-align: center;"><a href="family_contact.html" style="color: white;text-decoration: none"><strong>Contact Us</strong></a></td>
+
+			</tr>
+			
+		</table>
+		<!--tabel theree-->
+		<table width="100%">
+			<tr>
+				<td width="75%">
+					<h2>Motivation</h2>
+		<p>
+			Traditional answer evaluation ie. manual checking of answers takes a lot of time and energy. However, till now objective type questions can be evaluated using computers very efficiently but when it comes to theoretical evaluation of answers there does not exist a platform for checking the answers very precisely, and efficiently. so always there is a need for a checker to check the answers manually, which takes a lot of effort and time, and sometimes he/she has to provide the feedback as well which would again take a lot of effort and analysis. 
+<br>
+Hence, we propose a system that evaluates the assessment copies automatically according to the rubric set by the checker for every type of question(subjective and objective) and also for multiple types of copies like pdf, scanned pdf.  our system would also give feedback over every question in a sheet generated for each student.<br>	
+
+<h3>How is our proposed system better?</h3>
+
+<li>Checking of copies by teachers could lead to human error, but our system shows uniformity over all copies, which reduces human errors.</li>
+<br>
+<li>Our system could reduce lots of human time, power and money, which could be utilized in a better place.</li><br>
+<li>Our system would also accept the handwritten scanned type file which could be  submitted by students.</li>
+<br>
+<li>Our system provides feedback over every solution to the student in a .csv file, and also collective feedback of the whole class for each question in the form of a pie chart and histogram to the checker.</li>
+<br>
+<li>Our system is also supposed to provide the partial marking or binary marking option, which could be opted by the checker.</li>
+.<br>
+			
+				
+		 </p>
+		 <h2>Literature review</h2>
+		 <p>
+<dt><strong>Answer Evaluation Using Machine Learning:-</strong></dt>
+For using this application we have to scan the answer to a question, then the system will automatically generate the keyword using OCR technique. Based on keywords written in the answer and the keywords in the dataset, the application provides marks.[1]
+<dt><strong>Limitation:-</strong></dt>
+This model can not evaluate the handwritten text from the answers. It can only check the printed text from the image of answers.
+It does not include a feedback feature as well.<br>
+<br>
+
+<dt><strong>ONLINE SUBJECTIVE ANSWER CHECKER:-</strong></dt>
+Answer selected by the student (String1) is compared with the answer stored in the database( String2) provided by the checker. If String1= String2 then score=+1 or else score=0. After processing the results of the test into the database the results are displayed to the student.[2]
+<dt><strong>Limitation:-</strong></dt>
+This system is not efficient but it is less time consuming and still lacks the feature of extracting the handwritten text from the image i.e. this model checks only digital or printed text.
+It does not include a feedback feature as well.<br>
+<br>
+
+<dt><strong>NATURAL LANGUAGE PROCESSING AND ARTIFICIAL NEURAL NETWORKS</strong></dt>
+Once the student has submitted the answer, this system will automatically calculate the result using two algorithms of NLP (Natural Language Processing) and ANN (Artificial Neural Network). Here this model uses Artificial Neural Networks algorithm for the normal answer comparison and evaluates the same answer using Natural language processing [NLP] algorithm for grammar mistakes and stores the marks in the student database. Some basic linguistic analysis is performed in a natural language parser and is respectively used to perform POS tagging of the student’s answer text. After linguistic analysis, the student’s answer text is processed by the artificial neural networks algorithm; it will compare the student’s answer text with the answer provided by checker and with keywords. The result of each process is calculated using a “marks calculator” to compute the total marks obtained by the student for his/her answer and finally compares both marks and provides a final result.[3]
+<br> 
+<dt><strong>Limitation:-</strong></dt>
+This model is still in the phase of development for recognition of handwritten text using deep learning methods i.e. it is still not implemented. 
+<br>
+<br>
+
+<dt><strong>Automated Answering for Subjective Examination [4]</strong></dt>
+This is a nice platform for answer checking. It has a feature which allows more than one possible answer to the question and provides marks for any possible answer.
+	
+<dt><strong>Limitation:-</strong></dt> Although it was a good platform But, it does not provide feedback on each answer and also does not work over handwritten text.<br>
+
+<br>
+
+
+<strong>AI Answer Verifier[5]</strong></dt>
+It is a good platform here, instructors only need to upload the answer sheets and rubric. Also, he can make a rubric there as well.
+<dt><strong>Limitation:-</strong></dt> It was friendly for the instructor but if an answer sheet has many types of questions and if some has partial marking and some has binary marking then this model won’t work perfectly.<br>
+<br>
+		 	<!-- <ul>
+		 		<li>Home</li>
+		 		<li>List of Family Member</li>
+		 		<li>Occupation</li>
+		 		<li>Details Of Working Place</li>
+		 		<li>Contact</li>
+		 		
+		 	</ul> -->
+		 </p>
+
+		 <h2>Team Members</h2>
+		 <p>
+		 	<!-- <dl> -->
+		 		
+		 		<!-- <dd>When we go on the home we will get the information about website any many more.</dd> -->
+		 		<a href="ram.jpeg" ><img src="ram.jpeg" alt="ms dhoni" width="104" height="142">
+				</a>
+				<dt><strong>Ram Kumar</strong></dt>
+				<dt><strong>Email Id: ram18080@iiitd.ac.in</strong></dt><br>
+				<br>
+
+				<a href="udhbhav.jpeg" ><img src="udhbhav.jpeg" alt="ms dhoni" width="104" height="142">
+				</a>
+				<dt><strong>Udhbhav Gupta</strong></dt>
+				<dt><strong>Email Id: udhbhav17319@iiitd.ac.in</strong></dt><br>
+				<br>
+
+
+				<a href="prashant.jpeg" >
+  					<img src="prashant.jpeg" alt="ms dhoni" width="104" height="142">
+				</a>
+				<dt><strong>Prashant</strong></dt>
+				<dt><strong>Email Id: prashant18360@iiitd.ac.in</strong></dt><br>
+				<br>
+
+
+
+
+				<a href="sudhir.jpeg" >
+  					<img src="sudhir.jpeg" alt="ms dhoni" width="104" height="142">
+				</a>
+				<dt><strong>Sudhir Kumar</strong></dt>
+				<dt><strong>Email Id: sudhir18268@iiitd.ac.in</strong></dt><br>
+				<br>
+
+
+
+				<a href="ankit.jpeg" >
+  					<img src="ankit.jpeg" alt="ms dhoni" width="104" height="142">
+				</a>
+
+
+				<dt><strong>Ankit Kumar</strong></dt>
+				<dt><strong>Email Id: ankit18218@iiitd.ac.in</strong></dt><br>
+				<br>
+
+
+<!-- 
+		 		<dt><strong>List of Family Member</strong></dt>
+		 		<dd>When we visit this option we will get the list of all family members.<br>
+		 		And when we click on any family member we will get the detail about him/her. </dd>
+		 		<dt><strong>Occupation</strong></dt>
+		 		<dd>Here we can find about the work place details of any family member. </dd>
+		 		<dt><strong>Details Of Working Place</strong></dt>
+		 		<dd>It option will display the working place and detail
+s fo everyone simoultaneously.</dd>
+		 		<dt><strong>Contact</strong></dt>
+		 		<dd>This is the contact option of the head of the family.</dd> -->
+		 		
+		 <!-- 	</dl> -->
+
+		 	
+		 </p>
+		 <a href="#1">click here to go up</a>
+				<!-- 	
+				</td>
+				<td width="25%" align="center">
+					
+					<p>
+						<h1><strong><mark>Imopratance Of Online Evaluation System</mark></strong></h1>
+						<iframe width="560" height="315" src="https://www.youtube.com/embed/pbS6jPu-oXs" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+						<a href="https://www.google.com/"><br>Search here anything from internet</a>
+					</p>
+				</td> -->
+			</tr>
+			
+		</table>
+			
+		
+		
+
+	</body>
+</html>
